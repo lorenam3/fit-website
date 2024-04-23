@@ -112,21 +112,27 @@ section {
 /* FEATURE SECTION*/
 
 .feature-section {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.row {
+  margin-top: 5%;
   display: flex;
   justify-content: space-between;
+  gap: 3rem;
 }
 
 .feature {
-  display: flex;
-  flex-basis: 30%;
-  flex-grow: 1;
-  flex-shrink: 1;
-  height: 150px;
-  margin-right: 10px;
+  flex-basis: 31%;
+  margin-bottom: 5px;
   border-radius: 10px;
-  background-color: #f0f0f0;
-  justify-content: center;
-  align-items: center;
+  background: #ff9e02;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  transition: 0.5s;
 }
 
 .feature:hover {
@@ -134,16 +140,47 @@ section {
 }
 
 .feature h3 {
-  font-size: 1rem;
-  margin: 1rem;
-  margin-bottom: 10px;
+  text-align: center;
+  margin: 10px 0;
+  font-weight: 600;
 }
 
 .feature p {
-  font-size: 1rem;
+  font-size: 14px;
   color: #555;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
 }
 
+.about-data {
+  margin-bottom: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-subtitle {
+  font-size: 25px;
+}
+
+.section-border {
+  font-size: 35px;
+  color: #ff9e02;
+}
+
+.section-title {
+  color: #0289ff;
+}
+
+.classes-container {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(images/woman-helping-man-gym.jpg);
+  background-position: center;
+  background-size: cover;
+}
 /*                  MEDIA QUERIS                          */
 @media (max-width: 700px) {
   .text-box h1 {
@@ -181,5 +218,9 @@ section {
   .feature {
     flex-basis: 100%;
     margin-right: 0;
+  }
+
+  .row {
+    flex-direction: column;
   }
 }
