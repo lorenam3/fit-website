@@ -5,6 +5,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 header {
   min-height: 100vh;
   width: 100%;
@@ -106,9 +110,9 @@ nav .fa-solid {
   display: none;
 }
 
-section {
+/*section {
   margin: 30px;
-}
+*/
 /* FEATURE SECTION*/
 
 .feature-section {
@@ -129,7 +133,7 @@ section {
   flex-basis: 31%;
   margin-bottom: 5px;
   border-radius: 10px;
-  background: #ff9e02;
+  background: #f3eadd;
   padding: 20px 12px;
   box-sizing: border-box;
   transition: 0.5s;
@@ -171,7 +175,110 @@ section {
 .section-title {
   color: #0289ff;
 }
-/* classes section */
+
+/* pricing*/
+.classes-container {
+  padding-top: 1rem;
+}
+
+.classes-list {
+  position: relative;
+  width: 238px;
+  background-color: #9a4b4b;
+  padding: 2rem 1.5rem 1.5rem;
+  border-radius: 1rem;
+  margin-bottom: 3.5rem;
+  overflow: hidden;
+}
+
+.shape {
+  width: 180px;
+  height: 180px;
+  filter: blur(64px);
+}
+
+.classes-list .shape {
+  position: absolute;
+  top: -2.5rem;
+  left: -2.5rem;
+}
+
+.classes-title,
+.classes-subtitle,
+.classes-img {
+  position: relative;
+}
+
+.classes-title {
+  font-size: 20px;
+  margin-bottom: 0.25rem;
+  color: #fff;
+}
+
+.classes-subtitle {
+  font-size: 15px;
+  color: #fff;
+  font-weight: 400;
+}
+
+.classes-img {
+  width: 160px;
+  margin: 0.75rem 0 1.25rem 1.5rem;
+  transition: 0.3s;
+}
+
+.classes-data {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  gap: 0.5rem 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.classes-data-group {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  font-size: 15px;
+  color: #fff;
+}
+
+.classes-data i {
+  font-size: 1rem;
+}
+
+.classes-price {
+  font-size: 15px;
+  color: #fff;
+}
+
+.button-pricing {
+  border: none;
+  outline: none;
+  padding: 0.75rem 1rem;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-radius: 1rem 0 1rem 0;
+  cursor: pointer;
+}
+
+.button-pricing i {
+  font-size: 1.25rem;
+}
+
+.classes-list:hover .classes-img {
+  transform: translateY(-0.25rem);
+}
+
+.swiper-pagination-bullet {
+  background: #ff5602;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #0289ff;
+}
+
+/* classes section 
 
 .classes-container {
   display: flex;
@@ -278,7 +385,7 @@ section {
   text-shadow: 0 0 5px #999;
   font-size: 25px;
 }
-
+*/
 /*                  MEDIA QUERIS                          */
 
 @media (max-width: 700px) {

@@ -20,6 +20,8 @@
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
     />
+
+    <link rel="stylesheet" href="css/swiper-bundle.min.css"/>
   </head>
   <body>
     <header>
@@ -63,8 +65,7 @@
               <i class="fa-regular fa-heart"></i>
               <h3>Fitness Classes</h3>
               <p>
-                Join our diverse range of fitness classes suitable for all
-                levels.
+                Join our diverse range of fitness classes suitable for all levels.
               </p>
             </div>
           </div>
@@ -99,6 +100,122 @@
     </section>
 
 
+
+
+
+
+    <section class="classes section" id="classes">
+      <h2 class="section-title">
+        Choose Your Classes
+      </h2>
+      <div class="classes-container container swiper">
+        <div class="swiper-wrapper">
+          <article class="classes-list swiper-slide">
+                  <div class="shape"></div>
+
+                  <h1 class="classes-title">Cardio</h1>
+                  <h3 class="classes-subtitle">Group training</h3>
+
+                 <img src="images/cardio-group.jpg" alt="" class="classes-img">
+
+                <div class="classes-data">
+                    <div class="classes-data-group">
+                      <i class="fa-solid fa-calendar-days"></i> MON WED FRI
+                     </div>
+                    <div class="classes-data-group">
+                     <i class="fa-solid fa-clock"></i> 18:00-19:30h
+                    </div>
+                </div>
+
+                 <h3 class="classes-price">$45</h3>
+
+                  <button class="button-pricing">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                   </button>
+            </article>
+
+          <article class="classes-list swiper-slide">
+          <div class="shape"></div>
+
+          <h1 class="classes-title">Strength Training</h1>
+          <h3 class="classes-subtitle">Group training</h3>
+
+          <img src="images/strength-tr.jpg" alt="" class="classes-img">
+
+          <div class="classes-data">
+            <div class="classes-data-group">
+              <i class="fa-solid fa-calendar-days"></i> MON WED FRI SAT
+            </div>
+              <div class="classes-data-group">
+                <i class="fa-solid fa-clock"></i> 19:00-20:15h
+              </div>
+          </div>
+
+          <h3 class="classes-price">$60</h3>
+
+          <button class="button-pricing">
+            <i class="fa-solid fa-bag-shopping"></i>
+          </button>
+
+          </article>
+
+          <article class="classes-list swiper-slide">
+          <div class="shape s-smaller"></div>
+
+          <h1 class="classes-title">HIIT</h1>
+          <h3 class="classes-subtitle">Group training</h3>
+
+          <img src="images/hiit-tr.jpg" alt="" class="classes-img">
+
+          <div class="classes-data">
+              <div class="classes-data-group">
+                <i class="fa-solid fa-calendar-days"></i> TUE THR SAT
+              </div>
+              <div class="classes-data-group">
+                <i class="fa-solid fa-clock"></i> 17:00-18:00h
+              </div>
+          </div>
+
+          <h3 class="classes-price">$50</h3>
+
+          <button class="button-pricing">
+            <i class="fa-solid fa-bag-shopping"></i>
+          </button>
+
+          </article>
+
+         <article class="classes-list swiper-slide">
+          <div class="shape"></div>
+
+          <h1 class="classes-title">Yoga</h1>
+          <h3 class="classes-subtitle">Group training</h3>
+
+          <img src="images/yoga-class.jpg" alt="" class="classes-img">
+
+          <div class="classes-data">
+              <div class="classes-data-group">
+               <i class="fa-solid fa-calendar-days"></i> MON TUE THU FRI SAT
+              </div>
+              <div class="classes-data-group">
+                <i class="fa-solid fa-clock"></i> 19:30-20:45h
+              </div>
+          </div>
+
+          <h3 class="classes-price">$60</h3>
+
+          <button class="button-pricing">
+            <i class="fa-solid fa-bag-shopping"></i>
+          </button>
+
+          </article>
+        </div>
+
+        <div class="swiper-pagination"></div>
+      </div>
+
+    </section>
+
+<!--
     <section class="classes-container">
       <div class="row">
         <div class="col">
@@ -132,9 +249,10 @@
 
       </div>
     </section>
-
+  -->
     
-    <section></section>
+   
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
