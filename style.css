@@ -9,6 +9,11 @@ html {
   scroll-behavior: smooth;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 header {
   min-height: 100vh;
   width: 100%;
@@ -176,111 +181,9 @@ nav .fa-solid {
   color: #0289ff;
 }
 
-/* pricing*/
-.classes-container {
-  padding-top: 1rem;
-}
+/* classes section */
 
-.classes-list {
-  position: relative;
-  width: 238px;
-  background-color: #9a4b4b;
-  padding: 2rem 1.5rem 1.5rem;
-  border-radius: 1rem;
-  margin-bottom: 3.5rem;
-  overflow: hidden;
-}
-
-.shape {
-  width: 180px;
-  height: 180px;
-  filter: blur(64px);
-}
-
-.classes-list .shape {
-  position: absolute;
-  top: -2.5rem;
-  left: -2.5rem;
-}
-
-.classes-title,
-.classes-subtitle,
-.classes-img {
-  position: relative;
-}
-
-.classes-title {
-  font-size: 20px;
-  margin-bottom: 0.25rem;
-  color: #fff;
-}
-
-.classes-subtitle {
-  font-size: 15px;
-  color: #fff;
-  font-weight: 400;
-}
-
-.classes-img {
-  width: 160px;
-  margin: 0.75rem 0 1.25rem 1.5rem;
-  transition: 0.3s;
-}
-
-.classes-data {
-  display: grid;
-  grid-template-columns: repeat(2, max-content);
-  gap: 0.5rem 1.25rem;
-  margin-bottom: 2rem;
-}
-
-.classes-data-group {
-  display: inline-flex;
-  align-items: center;
-  column-gap: 0.5rem;
-  font-size: 15px;
-  color: #fff;
-}
-
-.classes-data i {
-  font-size: 1rem;
-}
-
-.classes-price {
-  font-size: 15px;
-  color: #fff;
-}
-
-.button-pricing {
-  border: none;
-  outline: none;
-  padding: 0.75rem 1rem;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  border-radius: 1rem 0 1rem 0;
-  cursor: pointer;
-}
-
-.button-pricing i {
-  font-size: 1.25rem;
-}
-
-.classes-list:hover .classes-img {
-  transform: translateY(-0.25rem);
-}
-
-.swiper-pagination-bullet {
-  background: #ff5602;
-}
-
-.swiper-pagination-bullet-active {
-  background-color: #0289ff;
-}
-
-/* classes section 
-
-.classes-container {
+.fit-classes {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -296,7 +199,7 @@ nav .fa-solid {
   box-sizing: border-box;
 }
 
-.classes-container .row {
+.fit-classes .row {
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 80%;
@@ -385,7 +288,126 @@ nav .fa-solid {
   text-shadow: 0 0 5px #999;
   font-size: 25px;
 }
-*/
+
+/* pricing*/
+.classes-section {
+  padding: 4.5rem 0 2rem;
+}
+
+.section_title {
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 2.5rem;
+  font-size: 40px;
+}
+
+.container {
+  max-width: 1024px;
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+}
+
+.classes-container {
+  padding-top: 1rem;
+}
+
+.classes-list {
+  position: relative;
+  width: 238px;
+  background-color: #9a4b4b;
+  padding: 2rem 1.5rem 1.5rem;
+  border-radius: 1rem;
+  margin-bottom: 3.5rem;
+  overflow: hidden;
+}
+
+.classes-list .shape {
+  width: 180px;
+  height: 180px;
+  filter: blur(64px);
+}
+
+.classes-list .shape {
+  position: absolute;
+  top: -2.5rem;
+  left: -2.5rem;
+}
+
+.classes-title,
+.classes-subtitle,
+.classes-img {
+  position: relative;
+}
+
+.classes-title {
+  font-size: 25px;
+  margin-bottom: 0.25rem;
+  color: #fff;
+}
+
+.classes-subtitle {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 400;
+}
+
+.classes-img {
+  width: 250px;
+  margin: 0.75rem 0 1.25rem 0.75rem;
+  transition: 0.3s;
+}
+
+.classes-data {
+  display: grid;
+  grid-template-columns: repeat(1, max-content);
+  gap: 0.5rem 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.classes-data-group {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  font-size: 20px;
+  color: #fff;
+}
+
+.classes-data i {
+  font-size: 1rem;
+}
+
+.classes-price {
+  font-size: 25px;
+  color: #fff;
+}
+
+.button-pricing {
+  border: none;
+  outline: none;
+  padding: 0.75rem 1rem;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-radius: 1rem 0 1rem 0;
+  cursor: pointer;
+}
+
+.button-pricing i {
+  font-size: 1.25rem;
+}
+
+.classes-list:hover .classes-img {
+  transform: translateY(-0.25rem);
+}
+
+.swiper-pagination-bullet {
+  background: #ff5602;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #0289ff;
+}
+
 /*                  MEDIA QUERIS                          */
 
 @media (max-width: 700px) {
