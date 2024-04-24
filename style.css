@@ -314,7 +314,7 @@ nav .fa-solid {
 .classes-list {
   position: relative;
   width: 238px;
-  background-color: #9a4b4b;
+  background-color: #785c4f;
   padding: 2rem 1.5rem 1.5rem;
   border-radius: 1rem;
   margin-bottom: 3.5rem;
@@ -390,6 +390,7 @@ nav .fa-solid {
   bottom: 0;
   border-radius: 1rem 0 1rem 0;
   cursor: pointer;
+  background: #0289ff;
 }
 
 .button-pricing i {
@@ -408,6 +409,56 @@ nav .fa-solid {
   background-color: #0289ff;
 }
 
+/*         about - page*/
+
+.about-header {
+  height: 50vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(images/dumbbells-gym.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+}
+
+.about-us {
+  width: 80%;
+  margin: auto;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+
+.about-col {
+  flex-basis: 48%;
+  padding: 30px 2px;
+}
+
+.about-col img {
+  width: 100%;
+}
+
+.about-col h1 {
+  padding-top: 0;
+  font-size: 25px;
+  color: #0289ff;
+}
+
+.about-col p {
+  padding: 15px 0 25px;
+  text-align: justify;
+  font-size: 17px;
+}
+
+.about-btn {
+  border: 1px solid #ff9e02;
+  background: transparent;
+  color: #ff5602;
+}
+
+.about-btn:hover {
+  color: #fff;
+}
 /*                  MEDIA QUERIS                          */
 
 @media (max-width: 700px) {
