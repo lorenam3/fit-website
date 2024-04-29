@@ -589,7 +589,7 @@ footer {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 0 100px;
+  padding: 0 50px;
   text-align: center;
   font-size: 14px;
   transition: height 0.5s;
@@ -598,12 +598,12 @@ footer {
 
 .classes-card .txt h1 {
   margin-bottom: 5px;
-  margin-top: 60%;
+  margin-top: 40%;
   font-size: 25px;
   letter-spacing: 2px;
 }
 .classes-card .txt a {
-  margin-top: 10px;
+  margin-top: 5px;
   color: #262626;
   text-decoration: none;
   background: #fff;
@@ -612,6 +612,10 @@ footer {
   padding: 5px 15px;
 }
 
+.classes-card .txt a:hover {
+  background: #ff9e02;
+  transition: 1s;
+}
 .classes-card:hover img {
   transform: scale(1.2);
 }
