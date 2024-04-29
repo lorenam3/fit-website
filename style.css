@@ -546,6 +546,79 @@ footer {
 .copyright:hover {
   color: #0289ff;
 }
+
+/* classes page*/
+.classes {
+  padding: 10px 10%;
+}
+#card-area {
+  padding: 50px 0;
+}
+
+.classes-page {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+  margin-bottom: 50px;
+}
+
+.classes-card {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
+}
+
+.classes-card img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
+}
+
+.classes-card .txt {
+  height: 0;
+  width: 100%;
+  background: linear-gradient(transparent, #1c1c1c 58%);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 100px;
+  text-align: center;
+  font-size: 14px;
+  transition: height 0.5s;
+  color: #fff;
+}
+
+.classes-card .txt h1 {
+  margin-bottom: 5px;
+  margin-top: 60%;
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+.classes-card .txt a {
+  margin-top: 10px;
+  color: #262626;
+  text-decoration: none;
+  background: #fff;
+  border-radius: 50px;
+  text-align: center;
+  padding: 5px 15px;
+}
+
+.classes-card:hover img {
+  transform: scale(1.2);
+}
+
+.classes-card:hover .txt {
+  height: 100%;
+}
 /*                  MEDIA QUERIS                          */
 
 @media (max-width: 700px) {
