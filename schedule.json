@@ -1,0 +1,70 @@
+{
+  "classesList": [
+    {
+      "name": "Cardio",
+      "schedule": [
+        { "day": "monday", "time": "18:00 - 19:30" },
+        { "day": "wednesday", "time": "18:00 - 19:30" },
+        { "day": "friday", "time": "18:00 - 19:30" }
+      ]
+    },
+    {
+      "name": "Strength Training",
+      "schedule": [
+        { "day": "monday", "time": "19:00 - 20:15" },
+        { "day": "wednesday", "time": "19:00 - 20:15" },
+        { "day": "friday", "time": "19:00 - 20:15" }
+      ]
+    },
+    {
+      "name": "HIIT",
+      "schedule": [
+        { "day": "tuesday", "time": "17:00 - 18:00" },
+        { "day": "thursday", "time": "17:00 - 18:00" },
+        { "day": "saturday", "time": "17:00 - 18:00" }
+      ]
+    },
+    {
+      "name": "Meditation",
+      "schedule": [
+        { "day": "monday", "time": "19:30 - 20:45" },
+        { "day": "tuesday", "time": "19:30 - 20:45" },
+        { "day": "thursday", "time": "19:30 - 20:45" },
+        { "day": "friday", "time": "19:30 - 20:45" },
+        { "day": "saturday", "time": "19:30 - 20:45" }
+      ]
+    },
+    {
+      "name": "Boxing",
+      "schedule": [
+        { "day": "monday", "time": "17:30 - 18:45" },
+        { "day": "wednesday", "time": "17:30 - 18:45" },
+        { "day": "friday", "time": "17:30 - 18:45" }
+      ]
+    },
+    {
+      "name": "Cycling",
+      "schedule": [
+        { "day": "tuesday", "time": "17:00 - 18:00" },
+        { "day": "thursday", "time": "17:00 - 18:00" },
+        { "day": "saturday", "time": "17:00 - 18:00" }
+      ]
+    },
+    {
+      "name": "Cross Training",
+      "schedule": [
+        { "day": "monday", "time": "16:00 - 17:00" },
+        { "day": "thursday", "time": "16:00 - 17:00" },
+        { "day": "friday", "time": "16:00 - 17:00" }
+      ]
+    },
+    {
+      "name": "Powerlifting",
+      "schedule": [
+        { "day": "tuesday", "time": "20:00 - 21:00" },
+        { "day": "thursday", "time": "20:00 - 21:00" },
+        { "day": "saturday", "time": "20:00 - 21:00" }
+      ]
+    }
+  ]
+}

@@ -623,6 +623,65 @@ footer {
 .classes-card:hover .txt {
   height: 100%;
 }
+
+/* schedule */
+
+#days {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#days button {
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid;
+  border-radius: 9%;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+#days button:hover {
+  background-color: #0289ff;
+}
+
+#schedule ul {
+  list-style-type: none;
+  padding: 0;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+#schedule ul li {
+  margin-bottom: 5px;
+}
+
+.class-info {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.class-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.class-name,
+.class-time {
+  flex: 1;
+}
+
+.class-item {
+  display: flex;
+  flex-direction: row;
+}
+
 /*                  MEDIA QUERIS                          */
 
 @media (max-width: 700px) {
