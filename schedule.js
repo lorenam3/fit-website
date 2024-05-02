@@ -2,9 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   fetch("schedule.json")
     .then((response) => response.json())
     .then((data) => {
-      const daysDiv = document.getElementById("days");
       const scheduleDiv = document.getElementById("schedule");
-
       const days = [
         "monday",
         "tuesday",
@@ -14,21 +12,26 @@ document.addEventListener("DOMContentLoaded", function () {
         "saturday",
         "sunday",
       ];
+
+      showClassesForDay(data, "monday", scheduleDiv);
+
       days.forEach((day) => {
         const button = document.createElement("button");
         button.textContent = day.charAt(0).toUpperCase() + day.slice(1);
-        button.addEventListener("click", () =>
-          showClassesForDay(data, day, scheduleDiv)
-        );
-        daysDiv.appendChild(button);
+        button.addEventListener("click", () => {
+          const buttons = document.querySelectorAll("#days button");
+          buttons.forEach((btn) => btn.classList.remove("active"));
+          button.classList.add("active");
+          scheduleDiv.innerHTML = "";
+          showClassesForDay(data, day, scheduleDiv);
+        });
+        document.getElementById("days").appendChild(button);
       });
     })
     .catch((error) => console.error("Error fetching schedule:", error));
 });
 
 function showClassesForDay(data, selectedDay, scheduleDiv) {
-  scheduleDiv.innerHTML = "";
-
   const classesList = document.createElement("ul");
   data.classesList.forEach((classItem) => {
     classItem.schedule.forEach((training) => {
@@ -38,7 +41,14 @@ function showClassesForDay(data, selectedDay, scheduleDiv) {
         <div class="class-item">
             <div class="class-name">${classItem.name}</div>
             <div class="class-time">${training.time}</div>
+            <button class="join-button">Join Now</button<
             </div>`;
+
+        const joinButton = listItem.querySelector(".join-button");
+        joinButton.addEventListener("click", () => {
+          window.location.href = "contact.html";
+        });
+
         classesList.appendChild(listItem);
       }
     });
@@ -49,8 +59,8 @@ function showClassesForDay(data, selectedDay, scheduleDiv) {
     classInfo.classList.add("class-info");
     classInfo.innerHTML = `
     <div class="class-header">
-        <div class="class-name">Class name</div>
-        <div class="class-time">Time</div>
+        <div class="name-of-class">Class name</div>
+        <div class="time-class">Time</div>
         </div>`;
     scheduleDiv.appendChild(classInfo);
     scheduleDiv.appendChild(classesList);

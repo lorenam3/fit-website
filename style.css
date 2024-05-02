@@ -626,11 +626,18 @@ footer {
 
 /* schedule */
 
+.schedule {
+  padding: 5rem 2.5rem;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
 #days {
   margin-bottom: 20px;
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
+  gap: 1rem;
 }
 
 #days button {
@@ -638,8 +645,8 @@ footer {
   margin: 5px;
   background-color: #fff;
   color: #000;
-  border: 1px solid;
-  border-radius: 9%;
+  border: 1px solid #dbd6d6;
+  border-radius: 23px;
   cursor: pointer;
   font-weight: 700;
   font-size: 15px;
@@ -647,6 +654,10 @@ footer {
 
 #days button:hover {
   background-color: #0289ff;
+}
+#days button.active {
+  background-color: #0289ff;
+  color: #fff;
 }
 
 #schedule ul {
@@ -661,25 +672,71 @@ footer {
 }
 
 .class-info {
-  border: 1px solid #ccc;
-  padding: 10px;
+  border: 5px solid #0289ff;
+  border-radius: 23px;
   margin-bottom: 10px;
+  padding: 3%;
+  text-align: center;
 }
 
 .class-header {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  font-weight: bold;
+  flex: 0.5;
+}
+
+.name-of-class {
+  flex: 1;
+  color: #000;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: left;
+}
+
+.time-class {
+  color: #000;
+  font-weight: 700;
+  font-size: 18px;
 }
 
 .class-name,
 .class-time {
   flex: 1;
+  color: #000;
+  font-weight: 700;
+  font-size: 18px;
 }
 
-.class-item {
+.class-item,
+.class-info {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  background-color: rgba(242, 242, 242, 0.7);
+  width: 100%;
+  padding: 3%;
+  transition: transform 0.3s ease;
+}
+
+.class-item:hover {
+  transform: scale(1.05);
+}
+
+.join-button {
+  width: 180px;
+  font-size: 12px;
+  padding: 12px 0;
+  background: #fff;
+  border: 0;
+  border-radius: 20px;
+  outline: none;
+  transition: background 0.5s;
+}
+
+.join-button:hover {
+  background: #0289ff;
+  transition: 1s;
 }
 
 /*                  MEDIA QUERIS                          */
