@@ -14,40 +14,35 @@ img {
   height: auto;
 }
 
-header {
-  min-height: 100vh;
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(56, 81, 179, 0.7)),
-    url(images/background-img.jpg);
-  background-position: center;
-  background-size: cover;
-  position: relative;
-}
-
-nav {
+  background-color: rgb(4, 9, 30);
+  padding: 10px 5%;
   display: flex;
-  padding: 2% 6%;
   justify-content: space-between;
   align-items: center;
+  z-index: 1000;
 }
 
 .logo img {
-  max-width: 150px;
+  max-width: 170px;
   height: auto;
   display: block;
   margin: 10px;
 }
 
-.nav-links {
-  flex: 1;
-  text-align: right;
+.nav-links ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .nav-links ul li {
-  list-style: none;
-  display: inline-block;
   padding: 8px 12px;
-  position: relative;
+  display: inline-block;
 }
 
 .nav-links ul li a {
@@ -68,6 +63,14 @@ nav {
 
 .nav-links ul li:hover::after {
   width: 100%;
+}
+
+.background-section {
+  position: relative;
+  height: 100vh;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(56, 81, 179, 0.7)),
+    url(images/background-img.jpg);
+  background-size: cover;
 }
 
 .text-box {
@@ -420,13 +423,21 @@ nav .fa-solid {
   background-size: cover;
   text-align: center;
   color: #fff;
+  position: relative;
 }
 
+.about-header h1 {
+  position: relative;
+  z-index: 2;
+  top: 10rem;
+}
 .about-us {
   width: 80%;
   margin: auto;
   padding-top: 80px;
   padding-bottom: 50px;
+  position: relative;
+  z-index: 2;
 }
 
 .about-col {
