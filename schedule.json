@@ -29,7 +29,6 @@
       "schedule": [
         { "day": "monday", "time": "19:30 - 20:45" },
         { "day": "tuesday", "time": "19:30 - 20:45" },
-        { "day": "thursday", "time": "19:30 - 20:45" },
         { "day": "friday", "time": "19:30 - 20:45" },
         { "day": "saturday", "time": "19:30 - 20:45" }
       ]
