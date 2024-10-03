@@ -10,6 +10,15 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
+    <title>Contact</title>
   </head>
   <body>
     <section class="about-header">
@@ -18,18 +27,18 @@
           <img src="images/fithub-logo.png" alt="logo_img" />
         </a>
 
-        <div class="nav-links" id="navLinks">
-          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+        <i class="fa-solid fa-bars" id="hamburger"></i>
+        <i class="fa-solid fa-xmark" id="close"></i>
+
+        <div class="nav-links" id="navLinks" style="right: -200px">
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="classes.html">Classes</a></li>
             <li><a href="schedule.html">Schedule</a></li>
-            <li><a href="">Contact</a></li>
-            <li><a href="">Pricing</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
-        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
       </nav>
 
       <h1>Contact</h1>
@@ -141,11 +150,11 @@
 
         <div class="footer-box">
           <h3>Page</h3>
-          <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Classes</a>
-          <a href="#">Schedule</a>
-          <a href="#">Contact</a>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="classes.html">Classes</a>
+          <a href="schedule.html">Schedule</a>
+          <a href="contact.html">Contact</a>
         </div>
 
         <div class="footer-box">
@@ -168,5 +177,8 @@
         <p>&#169; FitHub All Right Reserved</p>
       </div>
     </footer>
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
