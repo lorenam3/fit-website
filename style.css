@@ -412,7 +412,7 @@ img {
 /*         about - page*/
 
 .about-header {
-  height: 50vh;
+  height: 40vh;
   width: 100%;
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
     url(images/dumbbells-gym.jpg);
@@ -426,7 +426,7 @@ img {
 .about-header h1 {
   position: relative;
   z-index: 2;
-  top: 12rem;
+  top: 10rem;
   font-size: 2rem;
 }
 .about-us {
@@ -731,7 +731,7 @@ footer {
   flex: 1;
   color: #000;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .class-item,
@@ -751,7 +751,7 @@ footer {
 
 .join-button {
   width: 180px;
-  font-size: 12px;
+  font-size: 18px;
   padding: 12px 0;
   background: #fff;
   border: 0;
@@ -778,7 +778,7 @@ footer {
   justify-content: space-between;
   flex-wrap: wrap;
   margin-top: 5%;
-  gap: 3rem;
+  gap: 1rem;
 }
 
 .contact-content {
@@ -836,7 +836,7 @@ footer {
   text-align: center;
 }
 
-.contact-container .form {
+.-container .form {
   margin-top: 30px;
 }
 
@@ -1109,12 +1109,12 @@ textarea {
 
   /* about page*/
   .about-header {
-    height: 30vh;
+    height: 35vh;
   }
 
   .about-header h1 {
     top: 5rem;
-    padding-top: 50px;
+    /* padding-top: 50px; */
     font-size: 2rem;
   }
 
@@ -1157,6 +1157,61 @@ textarea {
 
   .classes-card .txt p {
     font-size: 12px;
+  }
+
+  /* CONTACT - PAGE*/
+  .contact-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info-container,
+  .contact-container {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .contact-container {
+    margin-top: 2rem;
+    padding: 20px;
+  }
+
+  .info {
+    gap: 0.5rem;
+  }
+
+  .info-block h3 {
+    font-size: 1.2rem;
+  }
+
+  .info-block p {
+    font-size: 1rem;
+  }
+
+  .contact-container header {
+    font-size: 1.3rem;
+  }
+
+  .contact-content h3 {
+    font-size: 25px;
+  }
+
+  .contact-content p {
+    font-size: 20px;
+  }
+
+  .info-block h3 {
+    font-size: 1.5rem;
+    padding-bottom: 3px;
+    border-bottom-width: 2px;
+  }
+
+  .info-block p {
+    font-size: 1.4rem;
+  }
+
+  .info a {
+    font-size: 1.7rem;
   }
 }
 
@@ -1319,9 +1374,112 @@ textarea {
   }
 
   .classes-card:hover .txt {
-    height: 10rem; /* Adjust height to fit the content */
-    padding: 20px 10px; /* Restore padding on hover */
-    opacity: 1; /* Make text visible */
+    height: 10rem;
+    padding: 20px 10px;
+    opacity: 1;
+  }
+
+  /* SCHEDULE-PAGE*/
+  #days {
+    grid-template-columns: 1fr;
+  }
+
+  .schedule {
+    padding: 2rem 0.5rem;
+  }
+
+  .class-name,
+  .class-time {
+    font-size: 14px;
+  }
+
+  .join-button {
+    width: 130px;
+    font-size: 10px;
+  }
+
+  /* CONTACT PAGE*/
+
+  .contact-information {
+    padding: 50px 0 30px;
+  }
+
+  .contact-content h3 {
+    font-size: 25px;
+  }
+
+  .contact-content p {
+    font-size: 20px;
+  }
+
+  .contact-container {
+    padding: 15px;
+    box-shadow: none;
+  }
+
+  .form :where(.input-box input, .select-box) {
+    height: 45px;
+    font-size: 0.9rem;
+  }
+
+  .form .input-box {
+    margin-top: 15px;
+  }
+
+  textarea {
+    padding: 0.8rem;
+    min-height: 120px;
+  }
+
+  .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  .info-block h3 {
+    font-size: 1rem;
+    padding-bottom: 3px;
+    border-bottom-width: 2px;
+  }
+
+  .info-block p {
+    font-size: 1.2rem;
+  }
+
+  .info a {
+    font-size: 1.4rem;
+  }
+
+  .contact-container header {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 370px) {
+  .class-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .class-name,
+  .class-time {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
+  .join-button {
+    width: 120px;
+    font-size: 14px;
+  }
+
+  .contact-content h3 {
+    font-size: 20px;
+  }
+
+  .contact-content p {
+    font-size: 15px;
   }
 }
 
