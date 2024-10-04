@@ -426,7 +426,8 @@ img {
 .about-header h1 {
   position: relative;
   z-index: 2;
-  top: 10rem;
+  top: 12rem;
+  font-size: 2rem;
 }
 .about-us {
   width: 80%;
@@ -493,7 +494,11 @@ footer {
   margin: 1rem;
 }
 
-.footer-box h3,
+.footer-box h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+}
+
 .footer-box h5,
 .footer-box p {
   margin-bottom: 0.8rem;
@@ -583,7 +588,7 @@ footer {
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
 }
 
-.classes-card img {
+.-card img {
   width: 100%;
   border-radius: 10px;
   display: block;
@@ -603,7 +608,7 @@ footer {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 0 50px;
+  padding: 0 20px;
   text-align: center;
   font-size: 14px;
   transition: height 0.5s;
@@ -611,19 +616,26 @@ footer {
 }
 
 .classes-card .txt h1 {
-  margin-bottom: 5px;
-  margin-top: 40%;
-  font-size: 25px;
-  letter-spacing: 2px;
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.2;
 }
+
+.classes-card .txt p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1;
+  padding: 5px 0;
+}
+
 .classes-card .txt a {
-  margin-top: 5px;
+  margin-top: 10px;
   color: #262626;
   text-decoration: none;
   background: #fff;
   border-radius: 50px;
   text-align: center;
-  padding: 5px 15px;
+  padding: 8px 20px;
 }
 
 .classes-card .txt a:hover {
@@ -1094,6 +1106,58 @@ textarea {
   .copyright {
     font-size: 0.8rem;
   }
+
+  /* about page*/
+  .about-header {
+    height: 30vh;
+  }
+
+  .about-header h1 {
+    top: 5rem;
+    padding-top: 50px;
+    font-size: 2rem;
+  }
+
+  .about-us {
+    width: 90%;
+    padding-top: 50px;
+  }
+
+  .about-col {
+    flex-basis: 100%;
+    padding: 20px 0;
+  }
+
+  .about-col h1 {
+    font-size: 22px;
+  }
+
+  .about-col p {
+    font-size: 16px;
+  }
+
+  /* classes - PAGE*/
+
+  .classes-page {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+  }
+
+  .classes-card .txt {
+    padding: 0 30px;
+  }
+
+  .classes-card .txt:hover {
+    height: 15rem;
+  }
+
+  .classes-card .txt h1 {
+    font-size: 16px;
+  }
+
+  .classes-card .txt p {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1197,6 +1261,67 @@ textarea {
 
   .copyright {
     font-size: 0.75rem;
+  }
+
+  /* About - page*/
+  .about-header {
+    height: 30vh;
+  }
+
+  .about-header h1 {
+    top: 4rem;
+    font-size: 1.5rem;
+  }
+
+  .about-us {
+    width: 95%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .about-us h1 {
+    font-size: 20px;
+  }
+
+  .about-us p {
+    font-size: 14px;
+  }
+
+  .about-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  /* CLASSES - PAGE*/
+  .classes-page {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+  .classes-card .txt {
+    height: 0;
+    padding: 0;
+    opacity: 0;
+    transition: height 0.5s ease, opacity 0.5s ease;
+  }
+
+  .classes .txt h1 {
+    font-size: 16px;
+  }
+
+  .classes .txt p {
+    font-size: 13px;
+    padding: 10px 0;
+  }
+
+  .classes .txt a {
+    padding: 6px 15px;
+    font-size: 12px;
+  }
+
+  .classes-card:hover .txt {
+    height: 10rem; /* Adjust height to fit the content */
+    padding: 20px 10px; /* Restore padding on hover */
+    opacity: 1; /* Make text visible */
   }
 }
 
