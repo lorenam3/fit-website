@@ -858,6 +858,7 @@ textarea {
   line-height: 1;
   border: 1px solid #ddd;
   border-radius: 6px;
+  color: #000;
   outline: none;
   cursor: pointer;
   transition: 0.3s;
@@ -1071,10 +1072,12 @@ textarea {
   }
 
   /* about page*/
+  .about-header {
+    min-height: 30vh;
+  }
 
   .about-header h1 {
     font-size: 1.5rem;
-    margin-top: 0.5rem;
   }
 
   .about-us {
@@ -1278,7 +1281,7 @@ textarea {
 
   /* About - page*/
   .about-header {
-    height: 30vh;
+    min-height: 20vh;
   }
 
   .about-header h1 {
