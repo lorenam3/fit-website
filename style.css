@@ -147,7 +147,11 @@ img {
   width: 80%;
   margin: auto;
   text-align: center;
-  padding-top: 100px;
+  padding-top: 50px;
+}
+
+.about-data {
+  margin-bottom: 40px;
 }
 
 .row {
@@ -336,7 +340,7 @@ img {
 }
 
 .classes-title {
-  font-size: 25px;
+  font-size: 23px;
   margin-bottom: 0.25rem;
   color: #fff;
   display: block;
@@ -368,7 +372,7 @@ img {
   display: inline-flex;
   align-items: center;
   column-gap: 0.5rem;
-  font-size: 20px;
+  font-size: 15px;
   color: #fff;
 }
 
@@ -412,7 +416,7 @@ img {
 /*         about - page*/
 
 .about-header {
-  height: 40vh;
+  min-height: 40vh;
   width: 100%;
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
     url(images/dumbbells-gym.jpg);
@@ -426,8 +430,9 @@ img {
 .about-header h1 {
   position: relative;
   z-index: 2;
-  top: 10rem;
+  /* top: 10rem; */
   font-size: 2rem;
+  margin-top: 4rem;
 }
 .about-us {
   width: 80%;
@@ -568,8 +573,9 @@ footer {
 
 /* classes page*/
 .classes {
-  padding: 10px 10%;
+  padding: 1px 1%;
 }
+
 #card-area {
   padding: 50px 0;
 }
@@ -617,25 +623,25 @@ footer {
 
 .classes-card .txt h1 {
   margin: 0;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.2;
 }
 
 .classes-card .txt p {
   margin: 0;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 1;
   padding: 5px 0;
 }
 
 .classes-card .txt a {
-  margin-top: 10px;
+  margin-top: 5px;
   color: #262626;
   text-decoration: none;
   background: #fff;
   border-radius: 50px;
   text-align: center;
-  padding: 8px 20px;
+  padding: 8px 15px;
 }
 
 .classes-card .txt a:hover {
@@ -923,7 +929,7 @@ textarea {
     right: -200px;
     width: 200px;
     background-color: #ff9e02;
-    height: 50%;
+    height: auto;
     padding: 20px;
     transition: right 0.3s ease;
   }
@@ -952,7 +958,11 @@ textarea {
   }
 
   .nav-links li {
-    margin: 10px 0;
+    margin: 3px 0;
+  }
+
+  .nav-links a {
+    font-size: 15px;
   }
 
   .background-section {
@@ -1030,6 +1040,7 @@ textarea {
 
   .card {
     height: 100%;
+    width: 100%;
   }
 
   .card h5 {
@@ -1064,7 +1075,7 @@ textarea {
   }
 
   .classes-list {
-    max-width: 90%;
+    max-width: 50%;
     margin-bottom: 0 auto;
   }
 
@@ -1108,14 +1119,10 @@ textarea {
   }
 
   /* about page*/
-  .about-header {
-    height: 35vh;
-  }
 
   .about-header h1 {
-    top: 5rem;
-    /* padding-top: 50px; */
     font-size: 2rem;
+    margin-top: 0.5rem;
   }
 
   .about-us {
@@ -1143,9 +1150,9 @@ textarea {
     grid-gap: 30px;
   }
 
-  .classes-card .txt {
+  /* .classes-card .txt {
     padding: 0 30px;
-  }
+  } */
 
   .classes-card .txt:hover {
     height: 15rem;
@@ -1221,7 +1228,7 @@ textarea {
   }
 
   .text-box h1 {
-    font-size: 32px;
+    font-size: 20px;
   }
 
   .text-box p {
@@ -1229,8 +1236,8 @@ textarea {
   }
 
   .hero-btn {
-    padding: 8px 20px;
-    font-size: 12px;
+    padding: 5px 15px;
+    font-size: 10px;
   }
 
   .feature-section {
@@ -1261,7 +1268,7 @@ textarea {
   }
 
   .card h5 {
-    font-size: 13px;
+    font-size: 11px;
   }
 
   /* classes list*/
@@ -1273,6 +1280,7 @@ textarea {
   }
   .section_title {
     font-size: 20px;
+    margin-top: 40px;
   }
   .classes-subtitle {
     font-size: 16px;
@@ -1324,7 +1332,6 @@ textarea {
   }
 
   .about-header h1 {
-    top: 4rem;
     font-size: 1.5rem;
   }
 
@@ -1405,11 +1412,11 @@ textarea {
   }
 
   .contact-content h3 {
-    font-size: 25px;
+    font-size: 20px;
   }
 
   .contact-content p {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .contact-container {
@@ -1452,6 +1459,15 @@ textarea {
 
   .contact-container header {
     font-size: 1.3rem;
+  }
+
+  .nav-links {
+    height: auto;
+    width: auto;
+  }
+
+  .nav-links li {
+    margin: 0;
   }
 }
 
