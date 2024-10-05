@@ -21,7 +21,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: white; /* */
+  color: white;
   z-index: 1000;
   top: 0;
   left: 0;
@@ -66,32 +66,15 @@ img {
   transition: 0.5s;
 }
 
-/* Hamburger icon 
+.nav-links ul li:hover::after {
+  width: 100%;
+}
 
-.fa-bars,
-.fa-xmark {
-  font-size: 24px;
-  cursor: pointer;
-  display: none;
-}*/
+/* Hamburger icon */
 
 #hamburger,
 #close {
   display: none;
-}
-
-.nav-links ul li::after {
-  content: "";
-  width: 0;
-  height: 2px;
-  background: #ff9e02;
-  display: block;
-  margin: auto;
-  transition: width 0.5s;
-}
-
-.nav-links ul li:hover::after {
-  width: 100%;
 }
 
 /* Background */
@@ -470,10 +453,6 @@ img {
   color: #ff5602;
 }
 
-.about-btn:hover {
-  color: #fff;
-}
-
 /* FOOTER SECTION*/
 
 footer {
@@ -542,10 +521,6 @@ footer {
   margin-top: 1rem;
 }
 
-.copyright:hover {
-  color: #0289ff;
-}
-
 .footer-box .logo img {
   margin-bottom: 1rem;
   max-width: 100px;
@@ -562,13 +537,6 @@ footer {
 
 .footer-box .time {
   margin-bottom: 1.8rem;
-}
-.footer-box p:hover {
-  color: #0289ff;
-}
-
-.footer-box h5 .days {
-  margin: 0.5rem;
 }
 
 /* classes page*/
@@ -594,7 +562,7 @@ footer {
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
 }
 
-.-card img {
+.classes-card img {
   width: 100%;
   border-radius: 10px;
   display: block;
@@ -842,10 +810,6 @@ footer {
   text-align: center;
 }
 
-.-container .form {
-  margin-top: 30px;
-}
-
 .form .input-box {
   width: 100%;
   margin-top: 20px;
@@ -1022,7 +986,7 @@ textarea {
   }
 
   .col h1 {
-    font-size: 24px;
+    font-size: 18px;
   }
 
   .col p {
@@ -1041,18 +1005,6 @@ textarea {
   .card {
     height: 100%;
     width: 100%;
-  }
-
-  .card h5 {
-    font-size: 20px;
-  }
-
-  .col h1 {
-    font-size: 18px;
-  }
-
-  .col p {
-    font-size: 18px;
   }
 
   .cards {
@@ -1121,7 +1073,7 @@ textarea {
   /* about page*/
 
   .about-header h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-top: 0.5rem;
   }
 
@@ -1155,7 +1107,7 @@ textarea {
   } */
 
   .classes-card .txt:hover {
-    height: 15rem;
+    height: 10rem;
   }
 
   .classes-card .txt h1 {
@@ -1251,9 +1203,7 @@ textarea {
   .feature p {
     font-size: 10px;
   }
-  .col h1 {
-    font-size: 20px;
-  }
+
   .col p {
     font-size: 12px;
   }
