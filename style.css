@@ -221,7 +221,7 @@ img {
 
 .row button:hover {
   background: #ff9e02;
-  transition: 1s;
+  transition: 0.5s;
 }
 
 .cards {
