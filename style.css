@@ -78,6 +78,14 @@ img {
 }
 
 /* Background */
+.background-section {
+  position: relative;
+  height: 100vh;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(56, 81, 179, 0.7)),
+    url(images/background-img.webp);
+  background-size: cover;
+  background-position: center;
+}
 
 .text-box {
   width: 90%;
