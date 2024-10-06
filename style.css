@@ -78,6 +78,7 @@ img {
 }
 
 /* Background */
+/*
 .background-section {
   position: relative;
   height: 100vh;
@@ -85,7 +86,7 @@ img {
     url(images/background-img.webp);
   background-size: cover;
   background-position: center;
-}
+} */
 
 .text-box {
   width: 90%;
