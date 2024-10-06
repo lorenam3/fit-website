@@ -82,7 +82,7 @@ img {
   position: relative;
   height: 100vh;
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(56, 81, 179, 0.7)),
-    url(images/background-img.jpg);
+    url(images/background-img.webp);
   background-size: cover;
   background-position: center;
 }
@@ -181,7 +181,7 @@ img {
   height: 700px;
   margin: 0;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(images/woman-helping-man-gym.jpg);
+    url(images/woman-helping-man-gym.webp);
   background-position: center;
   background-size: cover;
   padding: 0 8%;
@@ -238,26 +238,25 @@ img {
   box-sizing: border-box;
   cursor: pointer;
   margin: 10px 15px;
-  background-image: url(images/cardio.jpg);
   background-position: center;
   background-size: cover;
   transition: transform 0.5s;
 }
 
 .card1 {
-  background-image: url(images/cardio.jpg);
+  background-image: url(images/cardio.webp);
 }
 
 .card2 {
-  background-image: url(images/strength-training.jpg);
+  background-image: url(images/strength-training.webp);
 }
 
 .card3 {
-  background-image: url(images/HIIT-training.jpg);
+  background-image: url(images/HIIT-training.webp);
 }
 
 .card4 {
-  background-image: url(images/yoga.jpg);
+  background-image: url(images/yoga.webp);
 }
 
 .card:hover {
@@ -402,7 +401,7 @@ img {
   min-height: 40vh;
   width: 100%;
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-    url(images/dumbbells-gym.jpg);
+    url(images/dumbbells-gym.webp);
   background-position: center;
   background-size: cover;
   text-align: center;
