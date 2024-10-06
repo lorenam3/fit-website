@@ -6,21 +6,20 @@
     <meta name="description" content="Join our expert-led fitness classes in Zagreb. From cardio to strength training, we offer a range of classes to suit all levels">
     
     <title>FitHub | Best Fitness Classes in Zagreb</title>
-    <link rel="icon" type="image/x-ico" href="images/favicon.ico" />
+    <link rel="icon" type="image/svg" href="images/favicon.svg" />
+
+    <link rel="preload" href="images/background-img.webp" as="image">
+
     <link rel="stylesheet" href="style.css" />
 
     
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,600&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    />
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" as="style" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"></noscript>
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" as="style" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"></noscript>
 
     <link rel="stylesheet" href="css/swiper-bundle.min.css"/>
   </head>
@@ -156,7 +155,7 @@
                   <h1 class="classes-title">Cardio</h1>
                   <h3 class="classes-subtitle">Group training</h3>
 
-                 <img src="images/cardio-group.webp" alt="cardio training" class="classes-img">
+                 <img src="images/cardio-group.webp" alt="cardio training" class="classes-img" loading="lazy">
 
                 <div class="classes-data">
                     <div class="classes-data-group">
@@ -180,7 +179,7 @@
           <h1 class="classes-title">Strength Training</h1>
           <h3 class="classes-subtitle">Group training</h3>
 
-          <img src="images/strength-tr.webp" alt="strength training" class="classes-img">
+          <img src="images/strength-tr.webp" alt="strength training" class="classes-img" loading="lazy">
 
           <div class="classes-data">
             <div class="classes-data-group">
@@ -205,7 +204,7 @@
           <h1 class="classes-title">HIIT</h1>
           <h3 class="classes-subtitle">Group training</h3>
 
-          <img src="images/hiit-tr.webp" alt="hiit training" class="classes-img">
+          <img src="images/hiit-tr.webp" alt="hiit training" class="classes-img" loading="lazy">
 
           <div class="classes-data">
               <div class="classes-data-group">
@@ -230,7 +229,7 @@
           <h1 class="classes-title">Yoga</h1>
           <h3 class="classes-subtitle">Group training</h3>
 
-          <img src="images/yoga-class.webp" alt="yoga" class="classes-img">
+          <img src="images/yoga-class.webp" alt="yoga" class="classes-img" loading="lazy">
 
           <div class="classes-data">
               <div class="classes-data-group">
@@ -255,7 +254,7 @@
             <h1 class="classes-title">Boxing</h1>
             <h3 class="classes-subtitle">Group training</h3>
   
-            <img src="images/boxing.webp" alt="boxing class" class="classes-img">
+            <img src="images/boxing.webp" alt="boxing class" class="classes-img" loading="lazy">
   
             <div class="classes-data">
                 <div class="classes-data-group">
@@ -280,7 +279,7 @@
               <h1 class="classes-title">Cycling</h1>
               <h3 class="classes-subtitle">Group training</h3>
     
-              <img src="images/indoor-cycling.webp" alt="indoor cycling" class="classes-img">
+              <img src="images/indoor-cycling.webp" alt="indoor cycling" class="classes-img" loading="lazy">
     
               <div class="classes-data">
                   <div class="classes-data-group">
@@ -305,7 +304,7 @@
                 <h1 class="classes-title">Cross training</h1>
                 <h3 class="classes-subtitle">Group training</h3>
       
-                <img src="images/crossfit.webp" alt="crossfit training" class="classes-img">
+                <img src="images/crossfit.webp" alt="crossfit training" class="classes-img" loading="lazy">
       
                 <div class="classes-data">
                     <div class="classes-data-group">
@@ -330,7 +329,7 @@
                   <h1 class="classes-title">Powerlifting</h1>
                   <h3 class="classes-subtitle">Group training</h3>
         
-                  <img src="images/powerlifting.webp" alt="Powerlifting" class="classes-img">
+                  <img src="images/powerlifting.webp" alt="Powerlifting" class="classes-img" loading="lazy">
         
                   <div class="classes-data">
                       <div class="classes-data-group">
@@ -409,7 +408,7 @@
     </div>
     
    </footer>
-    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/swiper-bundle.min.js" defer></script>
     <script src="script.js"></script>
   </body>
 </html>
